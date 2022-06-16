@@ -1,0 +1,49 @@
+.c-article{
+  max-width: 620px;
+  margin: 0 auto;
+  
+  header{
+    margin-bottom: 24px;
+  }
+
+  time{
+    font-size: 14px;
+  }
+}
+
+.c-article__body{
+  p{
+    margin-bottom: 24px;
+  }
+
+  a{
+    text-decoration: underline;
+    color: #337ab7;
+    margin-bottom: 24px;
+    display: inline-block;
+  }
+
+  img{
+    margin-bottom: 24px;
+  }
+}
+
+.c-article__btn{
+  margin-top: 40px;
+
+  a{
+    border: 1px solid $color-main;
+    color: $color-main;
+    padding: 16px 24px;
+    display: inline-block;
+    text-align: center;
+    min-width: 160px;
+    margin: 0 auto;
+  }
+
+  .-prev{
+  background: $color-main;
+  color: #fff !important;
+  }
+}
+

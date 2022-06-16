@@ -1,0 +1,63 @@
+.p-mainVisual{
+  position: relative;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before{
+    content: '';
+    background: $color-main;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  @include mq('lg'){
+    height: 72vh;
+  }
+}
+
+.p-mainVisual__text{
+  z-index: 10;
+  position: relative;
+  color: #fff;
+
+  @include mq('md'){
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  h1{
+    line-height: 1.2;
+
+    @include mq('lg'){
+      font-size: 36px;
+    }
+  }
+
+  
+}
+
+.p-mainVisual__img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 90%;
+
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @include mq('md'){
+    width: 80%;
+  }
+}

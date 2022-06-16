@@ -1,0 +1,201 @@
+.l-header__inner{
+  max-width: 1200px;
+  padding: 12px 8px;
+  margin: 0 auto;
+
+  @include mq('sm'){
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+}
+
+
+.l-header__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@include mq('md'){
+  .l-header__inner{
+    padding-top: 24px;
+  }
+
+  .l-header__logo{
+    img{
+      width: 240px;
+    }
+  }
+}
+
+/* メニューのスタイリング */
+.l-header__menu {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	right: -100%;/* メニューの位置マイナス指定で画面外に */
+	width: 100%;
+	height: 100vh;
+	color: #efefef;
+	transition: .3s;
+  background: #fff;
+
+  li{
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid $color-main;
+    color: $color-main;
+    font-weight: 700;
+
+  }
+
+	a{
+		&:hover{
+			color: $color-main;
+		}
+	}
+}
+
+.l-header__menu.open {
+	position: absolute;
+	right: 0;/* メニューオープン時位置0にして画面内に */
+  z-index: 100;
+}
+
+/* スマホはボタンを非表示 */
+.header__buttons{
+	display: none;
+}
+
+@media not all and (min-width: 1024px){
+  .l-header__menu li a{
+    position: relative;
+
+  &:before{
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: url(../images/common/triangle.svg) no-repeat center center/cover;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -16px;
+    }
+    }
+}
+
+/* 1024px以上のスタイリング */
+@include mq('lg'){
+  .menu-btn {
+		display: none;
+	}
+
+	.l-header__menu {
+		/* メニューを横に */
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+    text-align: center;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		margin-bottom: 28px;
+		
+		li{
+      border-bottom: none;
+      position: relative;
+
+      &:not(:first-child):before{
+        position: absolute;
+        left: 0;
+        content: "";
+        width: 1px;
+        height: 24px;
+        background: $color-main;
+      }
+
+      &:hover{
+        opacity: 0.8;
+      }
+		}
+	}
+}
+
+
+
+
+
+
+/*================================
+	ハンバーガーメニュー
+=================================*/
+
+.openBtn{
+  position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+  cursor: pointer;
+  width: 50px;
+  height:50px;
+}
+
+/*ボタン内側*/
+.openBtn span{
+  display: inline-block;
+  transition: all .4s;/*アニメーションの設定*/
+  position: absolute;
+  left: 12px;
+  height: 2px;
+  background: $color-main;
+  width: 50%;
+}
+
+.openBtn span:nth-of-type(1) {
+  top:10px; 
+}
+
+.openBtn span:nth-of-type(2) {
+  top:18px;
+}
+
+.openBtn span:nth-of-type(3) {
+  top:26px;
+}
+
+.openBtn span:nth-of-type(3)::after {
+  content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+  position: absolute;
+  top:5px;
+  left:-2px;
+  color: $color-main;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+}
+
+/*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+.openBtn.active span:nth-of-type(3)::after {
+  content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+  transform: translateY(0) rotate(-45deg);
+  top:5px;
+  left:4px;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+.openBtn.active span:nth-of-type(1) {
+  top: 13px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openBtn.active span:nth-of-type(2) {
+  opacity: 0;/*真ん中の線は透過*/
+}
+
+.openBtn.active span:nth-of-type(3){
+  top: 25px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+

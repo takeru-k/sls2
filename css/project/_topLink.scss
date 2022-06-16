@@ -1,0 +1,71 @@
+.p-topLink{
+  @include mq('md'){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-topLink__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 28px 20px;
+
+  @include mq('md'){
+    width: 33%;
+  }
+
+  h2{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  &:not(:last-child){
+    margin-bottom: 12px;
+  }
+
+  @include mq('md'){
+    height: 250px;
+  }
+}
+
+.p-topLink__icon{
+  margin: 0 auto;
+
+  @include mq('md'){
+    height: 90px;
+  }
+}
+
+.-facebook{
+  background: #3B5998;
+}
+
+.-jblog{
+  background: #2A6319;
+}
+
+.-eblog{
+  background: #EB4869;
+}
+
+.-course{
+  background: #DCB30C;
+
+  h2{
+    margin-bottom: 8px;
+  }
+}
+
+.-private{
+  border: 1px solid #DCB30C;
+  color: #DCB30C;
+
+  h2{
+    margin-bottom: 8px;
+  }
+}

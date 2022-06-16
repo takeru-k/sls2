@@ -1,0 +1,17 @@
+.p-banner{
+  a:first-child{
+    margin-bottom: 16px;
+    display: block;
+  }
+}
+
+@include mq('md'){
+  .p-banner{
+    display: flex;
+    justify-content: space-between;
+
+    a{
+      width: 48%;
+    }
+  }
+}

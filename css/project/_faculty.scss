@@ -1,0 +1,49 @@
+/*================================
+	ごあいさつ
+=================================*/
+.p-faculty__item{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.p-faculty__img{
+  margin-bottom: 12px;
+
+  img{
+    margin: 0 auto;
+  }
+
+  figcaption{
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.p-faculty__text{
+  
+
+  h3{
+    font-size: 16px;
+
+    &:not(:first-child){
+      margin-top: 16px;
+    }
+  }
+}
+
+/* 1024px以上は横並び */
+@include mq('lg'){
+  .p-faculty__item{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .p-faculty__text{
+    width: 70%;
+  }
+
+  .p-faculty__img{
+    width: 20%;
+  }
+}

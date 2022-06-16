@@ -1,0 +1,21 @@
+.c-panel{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  display: none;
+}
+
+.c-panel__item{
+  padding: 10px 0;
+  border-bottom: 1px solid $color-main;
+  font-weight: bold;
+}
+
+.c-panel__inner{
+  border-left: 1px solid $color-main;
+  border-right: 1px solid $color-main;
+}

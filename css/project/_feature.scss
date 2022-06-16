@@ -1,0 +1,38 @@
+.p-feature{
+
+  img{
+    object-fit: cover;
+    margin-bottom: 4px;
+  }
+
+  figcaption{
+    text-align: center;
+    margin-bottom: 16px;
+    width: 88%;
+    font-size: 14px;
+  }
+}
+
+/* 768px以上は横並び */
+@include mq('md'){
+  .p-feature{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    figure{
+      width: 33%;
+    }
+
+    img{
+      width: 300px;
+    }
+
+    /* 擬似要素追加で左寄せに */
+    &:after{
+      content: "";
+      display: block;
+      width: 300px;
+    }
+  }
+}

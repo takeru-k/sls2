@@ -1,0 +1,40 @@
+.c-tableScroll{
+  overflow-x: auto;
+  margin-top: 24px;
+  max-width: 100%;
+
+  table{
+    min-width: 580px;
+    border-bottom: 1px solid #e5e5e5;;
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr{
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  th{
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    min-width: 100px;
+    font-weight: normal;
+    padding: 20px;
+    font-size: 0.9rem;
+    background: $color-sub;
+  }
+
+  td{
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    min-width: 100px;
+    padding: 20px;
+  }
+}
+
+.-red{
+  color: #ff0000;
+}
+

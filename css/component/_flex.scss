@@ -1,0 +1,36 @@
+/*================================
+	横並びのスタイリング
+=================================*/
+@include mq('lg'){
+  .c-flex{
+    display: flex;
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .c-flex__item{
+    width: 48%;
+  }
+
+}
+
+.c-flex__img{
+  height: 100%;
+  display: flex;
+
+  img{
+    object-fit: cover;
+    min-width: 350px;
+  }
+}
+
+.c-flex__item{
+  margin-bottom: 16px;
+}
+
+.c-flex__text{
+  p{
+    margin-bottom: 16px;
+  }
+}

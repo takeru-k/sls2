@@ -1,0 +1,32 @@
+.p-event{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+   figcaption{
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  img{
+    margin: 0 auto;
+    width: 350px;
+
+    @include mq('md'){
+      width: 320px;
+    }
+
+    @include mq('lg'){
+      width: 280px;
+    }
+  }
+
+  @include mq('md'){
+    .p-event__item + .p-event__item{
+      padding-left: 16px;
+    }
+  }
+}
+
+
+

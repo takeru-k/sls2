@@ -1,0 +1,13 @@
+.p-iframe{
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* = height ÷ width × 100 */
+
+    iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

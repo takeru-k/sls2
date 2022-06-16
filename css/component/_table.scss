@@ -1,0 +1,76 @@
+@media not all and (min-width: 1024px){
+  .c-table{
+
+    tr{
+      border-top: 1px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea;
+      }
+
+    th{
+      display: block;
+      padding: 8px 12px;
+      font-size: 18px;
+      background: $color-accent;
+
+     
+    }
+
+    td{
+      display: block;
+      padding: 8px 0 20px 12px;
+    }
+  }
+} 
+
+.c-table{
+  border-collapse: collapse;
+  width: 100%;
+
+  th{
+    text-align: left;
+
+    span{
+      font-size: 14px;
+    }
+  }
+
+  td{
+    span{
+      font-size: 14px;
+    }
+  }
+}
+
+@include mq('lg'){
+  .c-table{
+    margin-top: 24px;
+
+    th{
+      padding: 24px;
+      background: #DCB30C;
+      border: 1px solid #eaeaea;
+      width: 300px;
+    }
+
+    td{
+      padding: 24px;
+      border: 1px solid #eaeaea;
+    }
+  }
+}
+
+ol + ol{
+  margin-top: 24px;
+}
+
+.c-table__note{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+
+  p{
+    text-indent: -1em;
+    padding-left: 1em;
+    margin-bottom: 8px;
+  }
+}

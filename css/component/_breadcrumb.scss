@@ -1,0 +1,84 @@
+/*================================
+	パンくずリスト
+=================================*/
+.c-breadcrumb{
+  margin-top: 16px;
+
+  ul{
+    @media not all and (min-width: 640px){
+      min-width: 100px;
+    }
+
+     @include mq('lg'){
+      padding-left: 32px;
+    }
+  
+    font-feature-settings: "palt";
+    display: flex;
+    flex-wrap: wrap;
+    background: #f0f9f7;
+    padding: 16px 16px 8px 20px;
+  }
+
+  li{
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+
+    &:not(:last-child){
+      margin-right: 24px;
+    }
+
+    &:before{
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: url(../images/common/triangle.svg) no-repeat center center/cover;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+  }
+}
+
+.breadcrumb__items{
+  font-feature-settings: "palt";
+  display: flex;
+  flex-wrap: wrap;
+  background: #f0f9f7;
+  padding: 16px 16px 8px 20px;
+
+  @include mq('lg'){
+    padding-left: 32px;
+  }
+
+  li{
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+
+    &:not(:last-child){
+      margin-right: 24px;
+    }
+
+    &:before{
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: url(../images/common/triangle.svg) no-repeat center center/cover;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+
+    @media not all and (min-width: 640px){
+      min-width: 100px;
+    }
+  }
+}

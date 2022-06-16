@@ -1,0 +1,50 @@
+.p-language{
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+  margin-bottom:8px;
+}
+
+.p-language__list{
+  position: relative;
+  z-index: 100;
+  text-transform: uppercase;
+  display: block;
+  width: 150px;
+  text-align: center;
+  width: 100%;
+  color: $color-main;
+  font-size: 0.9rem;
+  text-align: center;
+  position: relative;
+}
+
+.js-dropdown{
+  background: $color-main;
+  color: #fff;
+  display: block;
+  position: relative;
+  padding: 4px 0;
+
+  &:after{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background: url(../images/common/icon-arrow-down.svg) no-repeat center center/cover;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+
+@include mq('lg'){
+  .p-language{
+    width: 160px;
+    position: absolute;
+    right: 8%;
+    top: 32px;
+  }
+}
