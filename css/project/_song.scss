@@ -1,0 +1,32 @@
+.p-song{
+  text-align: center;
+}
+
+.p-song__meta{
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 24px;
+}
+
+.p-song__item{
+  margin-bottom: 40px;
+
+  p{
+    margin-bottom: 16px;
+  }
+}
+
+.p-song__date{
+  font-size: 14px;
+}
+
+@include mq('md'){
+  .p-song__meta{
+    display: flex;
+    justify-content: center;
+
+    p:nth-child(2){
+      padding: 0 32px;
+    }
+  }
+}
