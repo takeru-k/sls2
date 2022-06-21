@@ -2035,6 +2035,11 @@ caption, th {
   text-align: center;
 }
 
+.p-song video {
+  width: 100%;
+  max-width: 640px;
+}
+
 .p-song__meta {
   font-size: 14px;
   text-align: right;
@@ -2046,7 +2051,7 @@ caption, th {
 }
 
 .p-song__item p {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .p-song__date {
@@ -2054,6 +2059,20 @@ caption, th {
 }
 
 @media (min-width: 768px) {
+  .p-song {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .p-song video {
+    width: 45%;
+  }
+  .p-song .p-song__lyric {
+    width: 55%;
+  }
   .p-song__meta {
     display: -webkit-box;
     display: -ms-flexbox;

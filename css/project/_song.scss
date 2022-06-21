@@ -1,5 +1,10 @@
 .p-song{
   text-align: center;
+
+  video{
+    width: 100%;
+    max-width: 640px;
+  }
 }
 
 .p-song__meta{
@@ -12,7 +17,7 @@
   margin-bottom: 40px;
 
   p{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 }
 
@@ -21,6 +26,20 @@
 }
 
 @include mq('md'){
+
+  .p-song{
+    display: flex;
+    align-items: flex-start;
+
+    video{
+      width: 45%;
+    }
+
+    .p-song__lyric{
+      width: 55%;
+    }
+  }
+
   .p-song__meta{
     display: flex;
     justify-content: center;
