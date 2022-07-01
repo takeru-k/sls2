@@ -33,17 +33,14 @@
 }
 
 /* 1024px以上は横並び */
-@include mq('lg'){
-  .p-faculty__item{
+@include mq('md'){
+  .p-faculty{
     display: flex;
     justify-content: space-between;
+
   }
 
-  .p-faculty__text{
-    width: 70%;
-  }
-
-  .p-faculty__img{
-    width: 20%;
+  .p-faculty__item{
+    max-width: 33%;
   }
 }
