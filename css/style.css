@@ -2023,6 +2023,14 @@ caption, th {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .p-event:after {
+    content: '';
+    display: block;
+    width: 33%;
   }
   .p-event__item {
     width: 33%;
