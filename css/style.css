@@ -1993,12 +1993,6 @@ caption, th {
   }
 }
 
-@media (min-width: 768px) {
-  .p-event__item + .p-event__item {
-    padding-left: 16px;
-  }
-}
-
 .p-event__item {
   margin-bottom: 16px;
 }
