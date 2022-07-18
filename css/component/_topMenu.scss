@@ -105,6 +105,17 @@
   }
 }
 
+.-sendai{
+  .c-topMenu__bg{
+    background: url(../images/common/sendai.jpeg) no-repeat center center/cover;
+  }
+
+  .c-topMenu__text{
+    background: #128ED3;
+  }
+}
+
+
 .c-topMenu__arrow{
   margin-top: 24px;
   margin-left: auto;

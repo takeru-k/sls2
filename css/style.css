@@ -526,6 +526,12 @@ img + img {
   color: #0066CC;
 }
 
+.c-section__text-alert {
+  color: #F70E02;
+  text-align: center;
+  margin-top: 8px;
+}
+
 .c-section__text + .c-section__text {
   padding-top: 24px;
 }
@@ -667,6 +673,14 @@ img + img {
 }
 
 .-teacher .c-topMenu__text {
+  background: #128ED3;
+}
+
+.-sendai .c-topMenu__bg {
+  background: url(../images/common/sendai.jpeg) no-repeat center center/cover;
+}
+
+.-sendai .c-topMenu__text {
   background: #128ED3;
 }
 
