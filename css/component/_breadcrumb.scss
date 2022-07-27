@@ -9,7 +9,7 @@
       min-width: 100px;
     }
 
-     @include mq('lg'){
+     @media (min-width: 1024px){
       padding-left: 32px;
     }
   
@@ -51,7 +51,7 @@
   background: #f0f9f7;
   padding: 16px 16px 8px 20px;
 
-  @include mq('lg'){
+  @media (min-width: 1024px){
     padding-left: 32px;
   }
 

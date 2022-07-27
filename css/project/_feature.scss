@@ -16,7 +16,7 @@
 }
 
 /* 768px以上は横並び */
-@include mq('md'){
+@media (min-width: 768px){
   .p-feature{
     display: flex;
     justify-content: space-between;

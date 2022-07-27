@@ -40,7 +40,7 @@
   }
 }
 
-@include mq('lg'){
+@media (min-width: 1024px){
   .p-language{
     width: 160px;
     position: absolute;

@@ -16,7 +16,7 @@
     z-index: 0;
   }
 
-  @include mq('lg'){
+  @media (min-width: 1024px){
     height: 72vh;
   }
 }
@@ -26,7 +26,7 @@
   position: relative;
   color: #fff;
 
-  @include mq('md'){
+  @media (min-width: 768px){
     position: absolute;
     left: 6%;
     top: 50%;
@@ -36,7 +36,7 @@
   h1{
     line-height: 1.2;
 
-    @include mq('lg'){
+    @media (min-width: 1024px){
       font-size: 36px;
     }
   }
@@ -57,7 +57,7 @@
     object-fit: cover;
   }
 
-  @include mq('md'){
+  @media (min-width: 768px){
     width: 80%;
   }
 }

@@ -1,7 +1,7 @@
 .c-section{
   padding: 40px 0 64px;
 
-  @include mq('lg'){
+  @media (min-width: 1024px){
     padding: 60px 0 88px;
   }
 }
@@ -39,7 +39,7 @@
   p{
     margin-bottom: 16px;
 
-    @include mq('lg'){
+    @media (min-width: 1024px){
       font-size: 16px;
     }
   }

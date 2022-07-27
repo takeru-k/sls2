@@ -33,7 +33,7 @@
 }
 
 /* 1024px以上は横並び */
-@include mq('md'){
+@media (min-width: 768px){
   .p-faculty{
     display: flex;
     justify-content: space-between;

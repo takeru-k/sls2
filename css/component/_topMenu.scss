@@ -10,11 +10,11 @@
     width: 100vw;
   }
 
-  @include mq('md'){
+  @media (min-width: 768px){
     height: 280px;
   }
 
-  @include mq('lg'){
+  @media (min-width: 1024px){
     height: 320px;
   }
 }
@@ -31,14 +31,14 @@
     margin-top: -88px;
   }
 
-  @include mq('md'){
+  @media (min-width: 768px){
     position: absolute;
     top: 10%;
     left: 24px;
     width: 50%;
   }
 
-  @include mq('lg'){
+  @media (min-width: 1024px){
     width: 40%;
     height: 260px;
   }

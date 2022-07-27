@@ -10,8 +10,12 @@
   }
 }
 
-@include mq('md'){
+@media (min-width: 768px){
   .c-intro{
     text-align: center;
   }
+}
+
+.c-intro-left{
+  text-align: left;
 }

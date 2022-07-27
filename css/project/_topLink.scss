@@ -1,5 +1,5 @@
 .p-topLink{
-  @include mq('md'){
+  @media (min-width: 768px){
     display: flex;
     justify-content: space-between;
   }
@@ -13,7 +13,7 @@
   color: #fff;
   padding: 28px 20px;
 
-  @include mq('md'){
+  @media (min-width: 768px){
     width: 33%;
   }
 
@@ -28,7 +28,7 @@
     margin-bottom: 12px;
   }
 
-  @include mq('md'){
+  @media (min-width: 768px){
     height: 250px;
   }
 }
@@ -36,7 +36,7 @@
 .p-topLink__icon{
   margin: 0 auto;
 
-  @include mq('md'){
+  @media (min-width: 768px){
     height: 90px;
   }
 }

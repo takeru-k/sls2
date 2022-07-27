@@ -5,7 +5,7 @@
   }
 }
 
-@include mq('md'){
+@media (min-width: 768px){
   .p-banner{
     display: flex;
     justify-content: space-between;

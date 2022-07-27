@@ -41,7 +41,7 @@
   }
 }
 
-@include mq('lg'){
+@media (min-width: 1024px){
   .c-table{
     margin-top: 24px;
 

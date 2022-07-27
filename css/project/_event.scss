@@ -14,7 +14,7 @@
   }
 }
 
-@include mq('md'){
+@media (min-width: 768px){
   .p-event{
     display: flex;
     flex-wrap: wrap;

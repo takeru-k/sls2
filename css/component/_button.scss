@@ -21,7 +21,7 @@
 }
 
 /* 768px以上は横並び */
-@include mq('md'){
+@media (min-width: 768px){
   .c-button__container{
     display: flex;
     flex-wrap: wrap;
